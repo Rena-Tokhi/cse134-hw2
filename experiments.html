@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rena Tokhi's software engineering portfolio &mdash; CSE 134 HW2.">
+  <title>Experiments &mdash; Rena Tokhi</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <style>
+    /* Custom Element #1 (<skill-tag>)  */
+    skill-tag {
+      display: inline-block;
+      border: 1px solid #16324f;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin: 2px;
+      font-family: monospace;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <p>This site works without JavaScript. A couple of small custom elements
+    use it for demonstration purposes only (see the footer and the
+    experiments page), but no core content depends on it.</p>
+  </noscript>
+  <header>
+    <div class="brand">
+      <img src="assets/img/logo.png" alt="Rena Tokhi logo" width="48" height="48">
+      <span>Rena Tokhi</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Experiments</h1>
+    <p>
+      This page exists purely to demonstrate a handful of HTML tags that don't really fit naturally into my
+      portfolio content: <code>&lt;template&gt;</code>, <code>&lt;audio&gt;</code>,
+      <code>&lt;video&gt;</code>, <code>&lt;canvas&gt;</code>, and <code>&lt;source&gt;</code>. It's linked
+      from the footer of every page rather than the main navigation, since it's a technical demo rather than
+      portfolio content.
+    </p>
+
+    <section id="custom-elements-demo">
+      <h2>Custom Elements</h2>
+      <p>Both required custom elements are used throughout the site, but here they are together for reference:</p>
+      <p>
+        <b>&lt;skill-tag&gt;</b> is styled with CSS only (no JavaScript) &mdash; you can see it used all over
+        the Projects, About, and Resume pages: <skill-tag>example-tag</skill-tag>
+      </p>
+      <p>
+        <b>&lt;hello-console&gt;</b> logs "Hello World!" to the browser console without touching the DOM.
+        Open your console to see it fire &mdash; one lives right here, and another is in the footer of every
+        page on this site.
+      </p>
+      <hello-console></hello-console>
+    </section>
+
+    <section id="template-demo">
+      <h2>&lt;template&gt;</h2>
+      <p>
+        The template below defines a reusable project-card layout. Per the assignment rules, it doesn't need
+        to render anywhere on the page &mdash; a browser skips a <code>&lt;template&gt;</code>'s contents
+        entirely until JavaScript clones it. You won't see anything printed below this paragraph, and that's
+        expected.
+      </p>
+      <template id="project-card-template">
+        <article class="project-card">
+          <img src="" alt="">
+          <h3></h3>
+          <p></p>
+        </article>
+      </template>
+    </section>
+
+    <section id="audio-demo">
+      <h2>&lt;audio&gt;</h2>
+      <p>A short placeholder audio clip (a plain 440Hz tone, generated for this demo &mdash; not a real project narration yet):</p>
+      <audio controls>
+        <source src="#" type="audio/mpeg">
+        Your browser doesn't support the audio element. You can
+        <a href="#">download the audio file</a> instead.
+      </audio>
+    </section>
+
+    <section id="video-demo">
+      <h2>&lt;video&gt;</h2>
+      <p>A short placeholder test clip, with two &lt;source&gt; formats for browser fallback:</p>
+      <video controls width="480" height="270" poster="#">
+        <source src="#" type="video/webm">
+        <source src="#" type="video/mp4">
+        Your browser doesn't support the video element. You can
+        <a href="#">download the video file</a> instead.
+      </video>
+    </section>
+
+    <section id="canvas-demo">
+      <h2>&lt;canvas&gt;</h2>
+      <p>A minimal canvas demo (under 15 lines of JavaScript, per the assignment's canvas exception):</p>
+      <canvas id="demo-canvas" width="400" height="120">
+        Your browser doesn't support the canvas element.
+      </canvas>
+    </section>
+
+    <section id="mathml-demo">
+      <h2>Extra Credit: MathML</h2>
+      <p>
+        Here's Einstein's mass&ndash;energy equivalence formula, written with MathML instead of an image:
+      </p>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>E</mi>
+        <mo>=</mo>
+        <mi>m</mi>
+        <msup>
+          <mi>c</mi>
+          <mn>2</mn>
+        </msup>
+      </math>
+      <p>
+        MathML has technically been part of the HTML spec for a long time, but for years it wasn't something
+        developers could actually rely on. According to <a href="https://caniuse.com/mathml" target="_blank" rel="noopener">caniuse.com</a>,
+        Chrome (and Chromium-based browsers like Edge) didn't ship built-in MathML support until relatively
+        recently &mdash; for a long stretch, Chrome either had no support or required a polyfill like MathJax,
+        even though Firefox and Safari had supported it for years. That's a big deal because Chrome/Chromium
+        has such a large browser market share: a spec feature is only really <em>usable</em> in production
+        once it works consistently across the browsers most of your users actually have.
+      </p>
+    </section>
+
+  </main>
+  <footer>
+    <p><b>Rena Tokhi</b> &mdash; Computer Science, UC San Diego</p>
+    <p>
+      <a href="https://github.com/Rena-Tokhi" target="_blank" rel="noopener">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/rena-tokhi-6274b2213/" target="_blank" rel="noopener">LinkedIn</a> &middot;
+      <a href="contact.html">Contact</a> &middot;
+      <a href="experiments.html">Experiments (tag demo page)</a>
+    </p>
+
+  </footer>
+</body>
+</html>

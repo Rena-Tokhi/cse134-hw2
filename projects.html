@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rena Tokhi's software engineering portfolio &mdash; CSE 134 HW2.">
+  <title>Projects &mdash; Rena Tokhi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/img/logo.png">
+  <style>
+    /* Custom Element #1 (<skill-tag>) */
+    skill-tag {
+      display: inline-block;
+      border: 1px solid #16324f;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin: 2px;
+      font-family: monospace;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <p>This site works without JavaScript. A couple of small custom elements
+    use it for demonstration purposes only (see the footer and the
+    experiments page), but no core content depends on it.</p>
+  </noscript>
+  <header>
+    <div class="brand">
+      <img src="assets/img/logo.png" alt="Rena Tokhi logo" width="48" height="48">
+      <span>Rena Tokhi</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="current"><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Projects</h1>
+    <p>
+      Five projects, selected from a full review of my GitHub repos based on commit activity, completeness,
+      and topical variety. They span a full-stack team capstone, a from-scratch distributed systems build,
+      and framework-specific work in Angular and React.
+    </p>
+
+    <div class="filters">
+      <span>Filter by stack (not yet wired up):</span>
+      <button type="button">JavaScript</button>
+      <button type="button">Java</button>
+      <button type="button">Angular</button>
+      <button type="button">React</button>
+    </div>
+
+    <section id="project-list">
+      <article>
+        <img src="#" alt="CS Stress 14 screenshot placeholder" width="800" height="450">
+        <h2>CS Stress 14 <span>&mdash; Flagship Project</span></h2>
+        <p>
+          A task/backlog management application with a Cloudflare Workers API backend (task CRUD endpoints)
+          and a frontend client. Built with a 4-person team for CSE 110, Spring 2026, with <b>272 commits</b>
+          and real collaboration workflow &mdash; design docs, meeting notes, PRs.
+        </p>
+        <div class="tags"><skill-tag>JavaScript</skill-tag><skill-tag>Cloudflare Workers</skill-tag><skill-tag>Team Project</skill-tag></div>
+        <p><a href="project-csstress14.html">Read more</a> &middot; <a href="https://github.com/cse110-sp26-group14/cse110-sp26-group14" target="_blank" rel="noopener">View on GitHub</a></p>
+      </article>
+
+      <article>
+        <img src="#" alt="GriffinBlockchain diagram placeholder" width="800" height="450">
+        <h2>GriffinBlockchain</h2>
+        <p>
+          A from-scratch peer-to-peer blockchain implementation: block/chain/consensus classes, RSA wallets,
+          a UTXO-style transaction model, a Merkle tree, mining logic, and a working socket-based P2P network
+          layer. Built solo, extending a starter framework from my instructors.
+        </p>
+        <div class="tags"><skill-tag>Java</skill-tag><skill-tag>P2P Networking</skill-tag><skill-tag>Cryptography</skill-tag></div>
+        <p><a href="project-griffin.html">Read more</a> &middot; <a href="https://github.com/Rena-Tokhi/GriffinBlockchain" target="_blank" rel="noopener">View on GitHub</a></p>
+      </article>
+
+      <article>
+        <img src="#" alt="Resto-Angular screenshot placeholder" width="800" height="450">
+        <h2>Resto-Angular</h2>
+        <p>
+          A restaurant-themed Angular app performing full CRUD operations against a json-server-backed data
+          layer. My most actively iterated Angular project, at 45 commits.
+        </p>
+        <div class="tags"><skill-tag>TypeScript</skill-tag><skill-tag>Angular</skill-tag><skill-tag>json-server</skill-tag></div>
+        <p><a href="project-restoangular.html">Read more</a> &middot; <a href="https://github.com/Rena-Tokhi/Resto-Angular" target="_blank" rel="noopener">View on GitHub</a></p>
+      </article>
+
+      <article>
+        <img src="#" alt="Encrypt-Decrypt screenshot placeholder" width="800" height="450">
+        <h2>Encrypt-Decrypt</h2>
+        <p>
+          A small Angular tool for encrypting and decrypting text using AES encryption. Topically distinct
+          from my CRUD-style apps &mdash; pairs with GriffinBlockchain to show a security-minded thread
+          across my projects.
+        </p>
+        <div class="tags"><skill-tag>TypeScript</skill-tag><skill-tag>Angular</skill-tag><skill-tag>AES</skill-tag></div>
+        <p><a href="project-encryptdecrypt.html">Read more</a> &middot; <a href="https://github.com/Rena-Tokhi/Encrypt-Decrypt" target="_blank" rel="noopener">View on GitHub</a></p>
+      </article>
+
+      <article>
+        <img src="#" alt="react-todo screenshot placeholder" width="800" height="450">
+        <h2>react-todo</h2>
+        <p>
+          A to-do list app built with React (Create React App). Demonstrates React specifically, which
+          broadens my framework coverage since it's the most commonly requested frontend skill in job
+          postings.
+        </p>
+        <div class="tags"><skill-tag>JavaScript</skill-tag><skill-tag>React</skill-tag></div>
+        <p><a href="project-reacttodo.html">Read more</a> &middot; <a href="https://github.com/Rena-Tokhi/react-todo" target="_blank" rel="noopener">View on GitHub</a></p>
+      </article>
+    </section>
+
+  </main>
+  <footer>
+    <p><b>Rena Tokhi</b> &mdash; Computer Science, UC San Diego</p>
+    <p>
+      <a href="https://github.com/Rena-Tokhi" target="_blank" rel="noopener">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/rena-tokhi-6274b2213/" target="_blank" rel="noopener">LinkedIn</a> &middot;
+      <a href="contact.html">Contact</a> &middot;
+      <a href="experiments.html">Experiments (tag demo page)</a>
+    </p>
+  </footer>
+</body>
+</html>

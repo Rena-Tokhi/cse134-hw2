@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rena Tokhi's software engineering portfolio &mdash; CSE 134 HW2.">
+  <title>Home &mdash; Rena Tokhi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/img/logo.png">
+  <style>
+    /* Custom Element #1 (<skill-tag>) */
+    skill-tag {
+      display: inline-block;
+      border: 1px solid #16324f;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin: 2px;
+      font-family: monospace;
+      font-size: 0.85em;
+    }
+  </style>
+  
+</head>
+<body>
+  <noscript>
+    <p>This site works without JavaScript. A couple of small custom elements
+    use it for demonstration purposes only (see the footer and the
+    experiments page), but no core content depends on it.</p>
+  </noscript>
+  <header>
+    <div class="brand">
+      <img src="assets/img/logo.png" alt="Rena Tokhi logo" width="48" height="48">
+      <span>Rena Tokhi</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+      <li class="current"><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero">
+      <div class="hero-inner">
+        <svg id="hero-icon" width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="52" height="52" rx="8" fill="#c8dbe6" stroke="#16324f" stroke-width="2"/>
+          <text x="30" y="38" text-anchor="middle" font-size="22" fill="#16324f">&lt;/&gt;</text>
+        </svg>
+        <h1>Hi, I'm Rena &mdash; Full-Stack Developer</h1>
+        <p>
+          I'm a <strong>third-year Computer Science student</strong> at UC San Diego. This site is where
+          I show <em>real</em>, working software I've built &mdash; not just a list of classes on a
+          resume. Everything here links straight to source code, and where it exists, a live demo.<br>
+          Full-Stack Developer &middot; <i>UC San Diego</i>
+        </p>
+        <picture>
+          <source srcset="assets/img/hero.png" media="(min-width: 600px)">
+          <img src="assets/img/hero.png" alt="Illustrated banner representing full-stack web development" width="900" height="300">
+        </picture>
+        <p>
+          <a href="projects.html">View My Projects</a>
+          <button type="button">Toggle Project Previews</button>
+        </p>
+      </div>
+    </section>
+
+    <section id="featured">
+      <h2>Featured Projects</h2>
+      <p>A quick look at three of the five projects on this site &mdash; see the
+      <a href="projects.html">full Projects page</a> for all of them.</p>
+      <ul class="project-grid">
+        <li>
+          <article>
+            <img src="#" alt="CS Stress 14 task management app screenshot placeholder" width="800" height="450">
+            <h3>CS Stress 14</h3>
+            <p>A task/backlog management app with a Cloudflare Workers API backend, built with a 4-person team for CSE 110.</p>
+            <div class="tags">
+              <skill-tag>JavaScript</skill-tag><skill-tag>Cloudflare Workers</skill-tag><skill-tag>REST API</skill-tag>
+            </div>
+            <a href="#">Read more</a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="#" alt="GriffinBlockchain architecture diagram placeholder" width="800" height="450">
+            <h3>GriffinBlockchain</h3>
+            <p>A from-scratch peer-to-peer blockchain in Java &mdash; wallets, RSA signatures, Merkle trees, and mining.</p>
+            <div class="tags"><skill-tag>Java</skill-tag><skill-tag>Networking</skill-tag><skill-tag>Cryptography</skill-tag></div>
+            <a href="project-griffin.html">Read more</a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="#" alt="Resto-Angular app screenshot placeholder" width="800" height="450">
+            <h3>Resto-Angular</h3>
+            <p>A restaurant-themed CRUD app built with Angular, backed by a json-server data layer.</p>
+            <div class="tags"><skill-tag>TypeScript</skill-tag><skill-tag>Angular</skill-tag></div>
+            <a href="project-restoangular.html">Read more</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about-preview">
+      <h2>About Me</h2>
+      <p>
+        I grew up speaking <b>Pashto</b>, <b>Persian/Dari</b>, and <b>Urdu</b> at home alongside English,
+        and that background shapes a lot of what I'm drawn to build &mdash; from community-facing tools to
+        security-minded projects like my encryption app and blockchain implementation.
+        <a href="about.html">Read my full bio &rarr;</a>
+      </p>
+    </section>
+
+  </main>
+  <footer>
+    <p><b>Rena Tokhi</b> &mdash; Computer Science, UC San Diego</p>
+    <p>
+      <a href="https://github.com/Rena-Tokhi" target="_blank" rel="noopener">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/rena-tokhi-6274b2213/" target="_blank" rel="noopener">LinkedIn</a> &middot;
+      <a href="contact.html">Contact</a> &middot;
+      <a href="experiments.html">Experiments (tag demo page)</a>
+    </p>
+  </footer>
+</body>
+</html>

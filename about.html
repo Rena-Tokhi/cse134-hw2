@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rena Tokhi's software engineering portfolio &mdash; CSE 134 HW2.">
+  <title>About &mdash; Rena Tokhi</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <style>
+    /* Custom Element #1 (<skill-tag>) */
+    skill-tag {
+      display: inline-block;
+      border: 1px solid #16324f;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin: 2px;
+      font-family: monospace;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <p>This site works without JavaScript. A couple of small custom elements
+    use it for demonstration purposes only (see the footer and the
+    experiments page), but no core content depends on it.</p>
+  </noscript>
+  <header>
+    <div class="brand">
+      <img src="assets/img/logo.png" alt="Rena Tokhi logo" width="48" height="48">
+      <span>Rena Tokhi</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="current"><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="bio">
+      <h1>About Me</h1>
+      <article>
+        <picture>
+          <source srcset="#" media="(min-width: 480px)">
+          <img src="#" alt="Placeholder avatar for Rena Tokhi" width="320" height="320">
+        </picture>
+        <p>
+          I'm <b>Rena Tokhi</b>, a third-year Computer Science student at UC San Diego with a focus on
+          full-stack development. I care about building things that are <em>actually useful</em>, whether
+          that's a team capstone project, a from-scratch blockchain, or a small tool built to learn a new
+          framework.
+        </p>
+        <p>
+          I grew up bilingual &mdash; well, more than bilingual. At home I spoke <i lang="ps">پښتو</i>
+          (Pashto), alongside Persian/Dari and Urdu, in addition to English. <strong>That background is a
+          big part of why I'm interested in tools that serve specific communities well</strong>, and it's
+          also probably why I gravitate toward precise, detail-oriented work like cryptography and
+          distributed systems.
+        </p>
+        <button type="button" aria-haspopup="dialog">Read Full Bio</button>
+        <dialog>
+          <h2>Full Bio</h2>
+          <p>
+            This dialog is a placeholder for a longer-form bio &mdash; per HW2 Part 2 rules, no JavaScript
+            is wired up yet to open or close it, so it won't currently be interactive. In a later phase
+            this will open when the button above is clicked.
+          </p>
+        </dialog>
+      </article>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <p>A rough sense of my comfort level in each language I grew up speaking or studying:</p>
+      <div>
+        <label for="lang-en">English</label>
+        <progress id="lang-en" value="100" max="100">100%</progress>
+      </div>
+      <div>
+        <label for="lang-ps">Pashto</label>
+        <progress id="lang-ps" value="95" max="100">95%</progress>
+      </div>
+      <div>
+        <label for="lang-fa">Persian / Dari</label>
+        <progress id="lang-fa" value="85" max="100">85%</progress>
+      </div>
+      <div>
+        <label for="lang-ur">Urdu</label>
+        <progress id="lang-ur" value="70" max="100">70%</progress>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ol>
+        <li>UC San Diego &mdash; B.S. Computer Science, expected 2028 (in progress, currently 3rd year)</li>
+        <li>Google Cybersecurity Certificate</li>
+        <li>Google IT Essentials Certificate</li>
+      </ol>
+    </section>
+
+  </main>
+  <footer>
+    <p><b>Rena Tokhi</b> &mdash; Computer Science, UC San Diego</p>
+    <p>
+      <a href="https://github.com/Rena-Tokhi" target="_blank" rel="noopener">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/rena-tokhi-6274b2213/" target="_blank" rel="noopener">LinkedIn</a> &middot;
+      <a href="contact.html">Contact</a> &middot;
+      <a href="experiments.html">Experiments (tag demo page)</a>
+    </p>
+    
+  </footer>
+</body>
+</html>
