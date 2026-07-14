@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study: GriffinBlockchain, a from-scratch P2P blockchain in Java &mdash; CSE 134 HW2.">
+  <title>GriffinBlockchain &mdash; Rena Tokhi</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <style>
+    /* Custom Element #1 (<skill-tag>) */
+    skill-tag {
+      display: inline-block;
+      border: 1px solid #16324f;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin: 2px;
+      font-family: monospace;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <p>This site works without JavaScript. A couple of small custom elements
+    use it for demonstration purposes only (see the footer and the
+    experiments page), but no core content depends on it.</p>
+  </noscript>
+  <header>
+    <div class="brand">
+      <img src="assets/img/logo.png" alt="Rena Tokhi logo" width="48" height="48">
+      <span>Rena Tokhi</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="current"><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>GriffinBlockchain</h1>
+    <p><a href="projects.html">&larr; Back to all projects</a></p>
+
+    <article>
+      <img src="#" alt="GriffinBlockchain architecture diagram placeholder" width="800" height="450">
+
+      <section id="tech-stack">
+        <h2>Tech Stack</h2>
+        <div>
+          <skill-tag>Java</skill-tag><skill-tag>P2P Networking</skill-tag><skill-tag>RSA Cryptography</skill-tag><skill-tag>Merkle Trees</skill-tag>
+        </div>
+      </section>
+
+      <section id="problem">
+        <h2>The Problem</h2>
+        <p>
+          I wanted to actually understand how a blockchain works under the hood &mdash; wallets, consensus,
+          mining, peer-to-peer networking &mdash; rather than just reading about the concepts. So I built one
+          from scratch in Java instead of relying on an existing library to handle the hard parts.
+        </p>
+      </section>
+
+      <section id="role">
+        <h2>My Role</h2>
+        <p>
+          This was a solo project. I implemented the core <code>Block</code>/<code>Blockchain</code>/
+          <code>BlockConsensus</code> classes, wallets backed by RSA key pairs, a UTXO-style transaction model
+          with inputs and outputs, a Merkle tree for verifying transaction sets, mining logic, and a working
+          socket-based P2P network layer so multiple nodes could actually exchange blocks and messages with
+          each other.
+        </p>
+      </section>
+
+      <section id="outcome">
+        <h2>Outcome</h2>
+        <p>
+          The result is a genuinely working peer-to-peer blockchain, not just a single-process simulation.
+          It's the project I point to that shows systems and cryptography fundamentals &mdash; distributed
+          consensus, networking, and data structures &mdash; rather than framework-driven CRUD work.
+        </p>
+      </section>
+
+      <p>
+        <a href="https://github.com/Rena-Tokhi/GriffinBlockchain" target="_blank" rel="noopener">View on GitHub</a>
+      </p>
+    </article>
+
+  </main>
+  <footer>
+    <p><b>Rena Tokhi</b> &mdash; Computer Science, UC San Diego</p>
+    <p>
+      <a href="https://github.com/Rena-Tokhi" target="_blank" rel="noopener">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/rena-tokhi-6274b2213/" target="_blank" rel="noopener">LinkedIn</a> &middot;
+      <a href="contact.html">Contact</a> &middot;
+      <a href="experiments.html">Experiments (tag demo page)</a> &middot;
+      <hello-console></hello-console>
+    </p>
+  </footer>
+  <script src="js/custom-elements.js"></script>
+</body>
+</html>

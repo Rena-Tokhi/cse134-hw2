@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study: CS Stress 14, a task management app built with Cloudflare Workers &mdash; CSE 134 HW2.">
+  <title>CS Stress 14 &mdash; Rena Tokhi</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <style>
+    /* Custom Element #1 (<skill-tag>) */
+    skill-tag {
+      display: inline-block;
+      border: 1px solid #16324f;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin: 2px;
+      font-family: monospace;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <p>This site works without JavaScript. A couple of small custom elements
+    use it for demonstration purposes only (see the footer and the
+    experiments page), but no core content depends on it.</p>
+  </noscript>
+  <header>
+    <div class="brand">
+      <img src="assets/img/logo.png" alt="Rena Tokhi logo" width="48" height="48">
+      <span>Rena Tokhi</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="current"><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>CS Stress 14 <span>&mdash; Flagship Project</span></h1>
+    <p><a href="projects.html">&larr; Back to all projects</a></p>
+
+    <article>
+      <img src="#" alt="CS Stress 14 task management app screenshot placeholder" width="800" height="450">
+
+      <section id="tech-stack">
+        <h2>Tech Stack</h2>
+        <div>
+          <skill-tag>JavaScript</skill-tag><skill-tag>Cloudflare Workers</skill-tag><skill-tag>REST API</skill-tag><skill-tag>Git / GitHub</skill-tag>
+        </div>
+      </section>
+
+      <section id="problem">
+        <h2>The Problem</h2>
+        <p>
+          For our CSE 110 team capstone, my four-person team needed to design and ship a working web
+          application from scratch over a single quarter, applying agile practices &mdash; sprint planning,
+          meeting notes, PR review &mdash; to a real product decision instead of a toy exercise. We landed on
+          a task/backlog management tool, aimed at small teams who wanted something lighter than Jira.
+        </p>
+      </section>
+
+      <section id="role">
+        <h2>My Role</h2>
+        <p>
+          I built out the Cloudflare Workers API backend: the task CRUD endpoints, including create, update,
+          and the <code>DELETE /api/tasks/:id</code> route, plus fixes to keep the task description field
+          syncing correctly between the frontend form and the worker on save. I also reviewed teammates' pull
+          requests and contributed to our meeting notes and design brief.
+        </p>
+      </section>
+
+      <section id="outcome">
+        <h2>Outcome</h2>
+        <p>
+          The project shipped as a fully working full-stack app with <b>272 commits</b> across the team, a
+          real collaboration history of design docs and PRs, and a recorded project demo. It's the most
+          complete, most current project I can point to for full-stack development and API design.
+        </p>
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/BqogslvHUOw"
+          title="CS Stress 14 project demo video" allowfullscreen></iframe>
+      </section>
+
+      <p>
+        <a href="https://github.com/cse110-sp26-group14/cse110-sp26-group14" target="_blank" rel="noopener">View on GitHub</a>
+      </p>
+    </article>
+
+  </main>
+  <footer>
+    <p><b>Rena Tokhi</b> &mdash; Computer Science, UC San Diego</p>
+    <p>
+      <a href="https://github.com/Rena-Tokhi" target="_blank" rel="noopener">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/rena-tokhi-6274b2213/" target="_blank" rel="noopener">LinkedIn</a> &middot;
+      <a href="contact.html">Contact</a> &middot;
+      <a href="experiments.html">Experiments (tag demo page)</a> &middot;
+      <hello-console></hello-console>
+    </p>
+  </footer>
+  <script src="js/custom-elements.js"></script>
+</body>
+</html>
