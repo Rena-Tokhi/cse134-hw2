@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study: Encrypt-Decrypt, an AES encryption tool built with Angular &mdash; CSE 134 HW2.">
+  <title>Encrypt-Decrypt &mdash; Rena Tokhi</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <style>
+    /* Custom Element #1 (<skill-tag>) */
+    skill-tag {
+      display: inline-block;
+      border: 1px solid #16324f;
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin: 2px;
+      font-family: monospace;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <p>This site works without JavaScript. A couple of small custom elements
+    use it for demonstration purposes only (see the footer and the
+    experiments page), but no core content depends on it.</p>
+  </noscript>
+  <header>
+    <div class="brand">
+      <img src="assets/img/logo.png" alt="Rena Tokhi logo" width="48" height="48">
+      <span>Rena Tokhi</span>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="current"><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Encrypt-Decrypt</h1>
+    <p><a href="projects.html">&larr; Back to all projects</a></p>
+
+    <article>
+      <img src="#" alt="Encrypt-Decrypt app screenshot placeholder" width="800" height="450">
+
+      <section id="tech-stack">
+        <h2>Tech Stack</h2>
+        <div>
+          <skill-tag>TypeScript</skill-tag><skill-tag>Angular</skill-tag><skill-tag>AES</skill-tag>
+        </div>
+      </section>
+
+      <section id="problem">
+        <h2>The Problem</h2>
+        <p>
+          Most of my other projects are CRUD apps or frameworks practice &mdash; I wanted something small and
+          focused that let me actually get hands-on with symmetric encryption instead of just reading about
+          how AES works.
+        </p>
+      </section>
+
+      <section id="role">
+        <h2>My Role</h2>
+        <p>
+          Solo project. I built a small Angular tool that takes plain text and a key, and encrypts or
+          decrypts it using AES, with a simple form-driven interface for trying it out.
+        </p>
+      </section>
+
+      <section id="outcome">
+        <h2>Outcome</h2>
+        <p>
+          A working encrypt/decrypt tool that's topically distinct from my CRUD-style apps &mdash; it pairs
+          well with GriffinBlockchain to show a security-minded thread across my projects, rather than just
+          framework repetition.
+        </p>
+      </section>
+
+      <p>
+        <a href="https://github.com/Rena-Tokhi/Encrypt-Decrypt" target="_blank" rel="noopener">View on GitHub</a>
+      </p>
+    </article>
+
+  </main>
+  <footer>
+    <p><b>Rena Tokhi</b> &mdash; Computer Science, UC San Diego</p>
+    <p>
+      <a href="https://github.com/Rena-Tokhi" target="_blank" rel="noopener">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/rena-tokhi-6274b2213/" target="_blank" rel="noopener">LinkedIn</a> &middot;
+      <a href="contact.html">Contact</a> &middot;
+      <a href="experiments.html">Experiments (tag demo page)</a> &middot;
+      <hello-console></hello-console>
+    </p>
+  </footer>
+  <script src="js/custom-elements.js"></script>
+</body>
+</html>
