@@ -111,6 +111,20 @@
       <canvas id="demo-canvas" width="400" height="120">
         Your browser doesn't support the canvas element.
       </canvas>
+      <script>
+        var demoCanvas = document.getElementById('demo-canvas');
+        var ctx = demoCanvas.getContext('2d');
+        ctx.fillStyle = '#c8dbe6';
+        ctx.fillRect(10, 10, 100, 100);
+        ctx.strokeStyle = '#16324f';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(220, 60, 50, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.font = '16px monospace';
+        ctx.fillStyle = '#16324f';
+        ctx.fillText('</> canvas demo', 150, 100);
+      </script>
     </section>
 
     <section id="mathml-demo">
@@ -145,9 +159,11 @@
       <a href="https://github.com/Rena-Tokhi" target="_blank" rel="noopener">GitHub</a> &middot;
       <a href="https://www.linkedin.com/in/rena-tokhi-6274b2213/" target="_blank" rel="noopener">LinkedIn</a> &middot;
       <a href="contact.html">Contact</a> &middot;
-      <a href="experiments.html">Experiments (tag demo page)</a>
+      <a href="experiments.html">Experiments (tag demo page)</a> &middot;
+      <hello-console></hello-console>
     </p>
 
   </footer>
+  <script src="js/custom-elements.js"></script>
 </body>
 </html>
